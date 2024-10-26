@@ -21,4 +21,13 @@ Estados:
 
 -git checkout <commit> : Para verificar el código que hay en ese commit.
 
+-git revert HEAD : quitar los cambios que ya se añadieron al commit.
+-git rever HEAD --no-edit
 
+-git commit --amend -m "feat: my complete change" : sí olvidaste un cambio lo agrega al último commit.
+
+Ramas:
+
+-git checkout -b develop : Crea y cambia a la rama develop
+-git branch : listar las ramas
+-git checkout main : cambiar a la rama main
