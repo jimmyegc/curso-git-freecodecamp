@@ -12,3 +12,13 @@ Estados:
 
 - U : Untrack, no tiene seguimiento del archivo y sus cambios.
 
+-git restore index.html -- quita el archivo del workdirectory.
+-git commit -m "feature: xxx"
+-git status
+
+-git log 
+-git log --oneline
+
+-git checkout <commit> : Para verificar el código que hay en ese commit.
+
+
