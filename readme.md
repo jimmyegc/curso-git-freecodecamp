@@ -8,6 +8,7 @@ Estados:
 
 -Preparado o Stage: Modificación y agregamos para su confirmación.
 -Modificado: Archivos que hemos modificado de su anterior version.
--Confirmado: Snapshot.
+-Confirmado: Snapshot / updated.
 
-- U : Untrack, no tiene seguimiento del archivo y sus cambios
+- U : Untrack, no tiene seguimiento del archivo y sus cambios.
+
