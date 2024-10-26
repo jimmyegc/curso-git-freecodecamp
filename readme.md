@@ -26,8 +26,36 @@ Estados:
 
 -git commit --amend -m "feat: my complete change" : sí olvidaste un cambio lo agrega al último commit.
 
-Ramas:
+Ramas
 
 -git checkout -b develop : Crea y cambia a la rama develop
 -git branch : listar las ramas
 -git checkout main : cambiar a la rama main
+-git branch -d feature/my-new-feature: para eliminar una rama
+
+Stashs
+
+git stash : guardar en una pila temporal para movernos entre las ramas.
+git stash -u : para guardar la pila y añadir los elementos nuevos a ese stash.
+git stash pop: para sacar el elemento de la pila.
+git stash list : Listar todos los stashs.
+git stash apply : Regresa el stash pero sin sacarlos de la lista.
+git stash pop stash@{0} : Sacando el stash especifico.
+git stash branch feature/my-stashed-feature stash@{0} : Hace una rama a partir de un Stash.
+git stash drop stash@{0} : Elimina el stash necesario.
+git stash clear : limpiar todos los stash.
+
+Cherry Pick
+Escenario: Hacemos una modificación en develop que es parte de un cambio que voy a trabajar.
+
+- Se toma el hash del commit: develop/ec381a0 
+- Irse a la rama destino: git checkout feature/my-new-feature
+- git cherry-pick ec381a0 
+
+Merge:
+Mezclamos la rama new feature con develop para test.
+
+-Revisamos que todo este añadido en la rama: feature/my-new-feature
+-Nos cambiamos a develop
+-git merge feature/my-new-feature : colocamos la rama que queremos mezclar
+
