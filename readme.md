@@ -18,12 +18,7 @@ Estados:
 
 -git log 
 -git log --oneline
--git log --oneline main
 
 -git checkout <commit> : Para verificar el código que hay en ese commit.
 
-Tags:
--git checkout v1 : create tag "v1"
--git tag -d v1 : delete tag "v1"
 
-git restore --staged readme.md : Deshacemos el cambio que agregamos a staged, no perdemos el cambio del archivo sólo no lo agregamos.
